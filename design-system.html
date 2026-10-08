@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Design System | CADI</title>
+<meta name="description" content="Tokens and components for the CADI website redesign.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wdth,wght@75..100,500..700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- 1. HEADER -->
+<header class="header" id="top">
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="CADI home">CADI</a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="./#loop">Platform</a>
+      <a href="./#across">Solutions</a>
+      <a href="./#environments">Who We Serve</a>
+      <a href="integrations.html">API</a>
+      <a href="https://blog.cadime.ai" target="_blank" rel="noopener">Blog</a>
+    </nav>
+    <div class="header-cta">
+      <a class="login" href="https://app.cadime.ai/auth/authentication-redirection" target="_blank" rel="noopener">Log in</a>
+      <a class="btn btn-primary" href="contact.html">Book a demo</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="page-hero" style="padding-bottom:0">
+  <div class="wrap">
+    <span class="eyebrow">Design system</span>
+    <h1>CADI web foundations.</h1>
+    <p class="lede">The tokens and components every page on this site is built from. Deel's measured system, with CADI's blue where Deel uses purple. Import this page into Figma first and turn each block into a style or component.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="ds-section" style="margin-top:0"><h2>Colour</h2>
+      <div class="ds-swatches">
+        <div class="sw"><i style="background:#1b1b1b"></i><div><b>Ink</b>#1b1b1b · text, primary buttons, dark panels</div></div><div class="sw"><i style="background:#4e4e4e"></i><div><b>Ink 2</b>#4e4e4e · secondary text</div></div><div class="sw"><i style="background:#767676"></i><div><b>Muted</b>#767676 · captions</div></div><div class="sw"><i style="background:#e6e2dc"></i><div><b>Line</b>#e6e2dc · dividers</div></div>
+        <div class="sw"><i style="background:#ffffff"></i><div><b>White</b>#ffffff · page</div></div><div class="sw"><i style="background:#faf4ee"></i><div><b>Latte</b>#faf4ee · cards, section surfaces</div></div><div class="sw"><i style="background:#dbeeff"></i><div><b>Sky soft</b>#dbeeff · icon tiles, tints</div></div><div class="sw"><i style="background:#b1d8fc"></i><div><b>Sky</b>#b1d8fc · accent chip, checkbox</div></div>
+        <div class="sw"><i style="background:#d6c9fd"></i><div><b>Lavender</b>#d6c9fd · accent chip</div></div><div class="sw"><i style="background:#ece6ff"></i><div><b>Lavender soft</b>#ece6ff · carousel, newsletter</div></div><div class="sw"><i style="background:#ffcf25"></i><div><b>Yellow</b>#ffcf25 · single highlight</div></div><div class="sw"><i style="background:#0a5ffb"></i><div><b>CADI Blue</b>#0a5ffb · hero gradient end, links on dark</div></div>
+        <div class="sw"><i style="background:#071d5c"></i><div><b>CADI Navy</b>#071d5c · hero gradient start</div></div><div class="sw"><i style="background:#53a945"></i><div><b>Green</b>#53a945 · live / success</div></div><div class="sw"><i style="background:#faaf00"></i><div><b>Amber</b>#faaf00 · warning</div></div><div class="sw"><i style="background:#e5484d"></i><div><b>Red</b>#e5484d · error / end call</div></div>
+      </div>
+    </div>
+    <div class="ds-section"><h2>Type</h2>
+      <div class="ds-type">
+        <div><small>Display / H1 · Archivo 500, width 78%</small><span style="font:500 56px/1 var(--display);font-stretch:78%;letter-spacing:-.01em">Build the training you need.</span></div>
+        <div><small>H2 · Archivo 600, width 80%</small><span style="font:600 44px/1.04 var(--display);font-stretch:80%">One system. Many moments.</span></div>
+        <div><small>H3 · Archivo 600</small><span style="font:600 26px/1.1 var(--display);font-stretch:80%">Your knowledge. Your standards.</span></div>
+        <div><small>Card title · Inter 600 19px</small><span style="font:600 19px/1.3 var(--body)">Streamlined user onboarding</span></div>
+        <div><small>Lede · Inter 400 19px</small><span style="font:400 19px/1.55 var(--body);color:var(--ink-2)">AI-led classes, adaptive assessments, realistic practice.</span></div>
+        <div><small>Body · Inter 400 16px</small><span style="font:400 16px/1.6 var(--body);color:var(--ink-2)">Prepare people for the knowledge, decisions, and conversations their roles demand.</span></div>
+        <div><small>Eyebrow · Inter 600 12px, +12% tracking, caps</small><span class="eyebrow">Across work &amp; learning</span></div>
+      </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--muted)">Archivo (condensed width axis) stands in for Deel's Bagoss Condensed. If CADI licenses Bagoss, swap the family and keep the sizes.</p>
+    </div>
+    <div class="ds-section"><h2>Buttons &amp; links</h2>
+      <div class="ds-row">
+        <a class="btn btn-primary" href="#">Book a demo</a>
+        <a class="btn btn-ghost" href="#">See CADI in action</a>
+        <span style="background:var(--ink);padding:10px;border-radius:999px;display:inline-flex"><a class="btn btn-white" href="#" style="background:#fff;color:var(--ink)">On dark</a></span>
+        <a class="link" href="#">Explore Enterprise <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a class="opt" style="max-width:150px;color:#fff;background:#0a3fc0;border-color:rgba(255,255,255,.2)" href="#"><span class="box"></span>Hero tile</a>
+        <span class="live" style="position:static"><i></i>Live session</span>
+      </div>
+    </div>
+    <div class="ds-section"><h2>Surfaces &amp; cards</h2>
+      <div class="card-grid">
+        <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></span><h3>Latte card</h3><p>Default card on white. 16px radius, no border, no shadow.</p></div>
+        <div class="sec dark" style="padding:26px"><h3 style="font-size:19px;font-family:var(--body);font-stretch:100%">Ink panel</h3><p>For one emphasis block per page.</p></div>
+        <div class="stat"><b>29%</b><span>Stat tile — display numerals, latte surface</span></div>
+        <div class="slot"><b>Content slot</b>Dashed lavender marker for copy still to come.</div>
+      </div>
+    </div>
+    <div class="ds-section"><h2>Layout</h2>
+      <p style="color:var(--ink-2);max-width:70ch">1200px content column with a fluid 16–40px gutter. Sections carry 56–96px vertical padding. Two-column sections collapse at 1024px; cards go to one column and the menu collapses at 820px. Radii: 10px tiles, 16px cards, 24px section panels, pills for buttons and chips.</p>
+    </div>
+    <div class="ds-section"><h2>Pages in this system</h2>
+      <div class="chips">
+        <a href="./">Home <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="integrations.html">API Integrations <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="podcast.html">Podcast <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="contact.html">Request a Demo <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="terms-of-use.html">Terms of Use <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="data-processing-agreement.html">DPA <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="privacy-policy.html">Privacy Policy <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="cookie-policy.html">Cookie Policy <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- 12. FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-logo">CADI</span>
+        <p>CADI learns your business in minutes transforming company materials into adaptive, conversational AI training systems built to scale seamlessly.</p>
+        <form class="sub" id="subscribe" aria-label="Subscribe">
+          <input type="email" id="subEmail" placeholder="Email address" aria-label="Email address" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div>
+        <h4>COMPANY</h4>
+        <ul><li><a href="./#loop">Platform</a></li><li><a href="./#across">Enterprise</a></li><li><a href="./#across">Education</a></li><li><a href="./#security">Security</a></li><li><a href="integrations.html">API Integrations</a></li></ul>
+      </div>
+      <div>
+        <h4>RESOURCES</h4>
+        <ul><li><a href="contact.html">Request a Demo</a></li><li><a href="https://app.cadime.ai/auth/get-started" target="_blank" rel="noopener">Get Started</a></li><li><a href="https://blog.cadime.ai" target="_blank" rel="noopener">Blog</a></li><li><a href="podcast.html">Podcast</a></li><li><a href="./#faq">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CADI. All rights reserved.</span>
+      <span><a href="terms-of-use.html">Terms of Use</a>|<a href="data-processing-agreement.html">DPA</a>|<a href="privacy-policy.html">Privacy Policy</a>|<a href="cookie-policy.html">Cookie Policy</a></span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var h=document.querySelector('.header');addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>8)},{passive:true});
+  var mb=document.getElementById('menuBtn'),nav=document.getElementById('nav');mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+  document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button[type=submit]');b.textContent='Sent';b.disabled=true})});
+  
+})();
+</script>
+</body>
+</html>
