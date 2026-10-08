@@ -8,6 +8,9 @@
 | integrations.html | API Integrations (was /integrations) |
 | podcast.html | Podcast (was /podcast) |
 | contact.html | Request a Demo (was the #contact anchor; now a page) |
+| blog.html / blog-post.html | Blog index + post template (was blog.cadime.ai, WordPress) |
+| security.html | Security & Trust page fronting trust.cadime.ai |
+| get-started.html / login.html | App auth screens (app.cadime.ai) |
 | terms-of-use.html | Terms of Use |
 | data-processing-agreement.html | DPA |
 | privacy-policy.html | Privacy Policy (text slot — live page embeds a third-party script) |
